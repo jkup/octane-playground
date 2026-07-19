@@ -1,0 +1,14 @@
+{
+	// The tsconfig "plugins" entry only loads when VS Code runs the workspace
+	// copy of TypeScript rather than its own bundled one.
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	// The extension registers .tsrx under the language id "ripple" (aliased
+	// "TSRX"), not "tsrx".
+	"[ripple]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
+}

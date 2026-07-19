@@ -1,0 +1,22 @@
+{
+	"useTabs": true,
+	"tabWidth": 2,
+	"singleQuote": true,
+	"printWidth": 100,
+	"plugins": ["@tsrx/prettier-plugin"],
+	"overrides": [
+		{
+			"files": ["*.tsrx"],
+			"options": {
+				"parser": "tsrx",
+				"bracketSameLine": false
+			}
+		},
+		{
+			"files": ["*.json"],
+			"options": {
+				"useTabs": false
+			}
+		}
+	]
+}

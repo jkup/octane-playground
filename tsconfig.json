@@ -10,8 +10,11 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "jsx": "react-jsx",
-    "jsxImportSource": "octane"
+    // "preserve" because octane@0.1.10 does not publish its jsx-runtime types.
+    // Once it does, switch to "react-jsx" + "jsxImportSource": "octane" and
+    // delete src/tsrx.d.ts to get real per-element JSX typing.
+    "jsx": "preserve",
+    "plugins": [{ "name": "@tsrx/typescript-plugin" }]
   },
   "include": ["src/**/*", "vite.config.ts"]
 }

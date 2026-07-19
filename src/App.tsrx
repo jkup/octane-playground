@@ -1,4 +1,4 @@
-import { useState } from 'octane';
+import { useState, useRef } from 'octane';
 
 type AppProps = {
 	name: string;
@@ -6,6 +6,7 @@ type AppProps = {
 
 export function App(props: AppProps) @{
 	const [clicks, setClicks] = useState(0);
+	const ref = useRef();
 
 	<main>
 		<h1>{'Hello, ' + props.name + '!'}</h1>
