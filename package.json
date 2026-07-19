@@ -1,0 +1,27 @@
+{
+  "name": "octane-playground",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A scratch space for playing with Octane, a fast TypeScript-first UI framework.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkup/octane-playground.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "octane": "^0.1.10"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.1.5"
+  }
+}
